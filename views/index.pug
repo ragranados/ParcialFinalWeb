@@ -4,4 +4,12 @@ block content
   h1= title
   p Welcome to #{title}
 
-  form(action='')
+  form(action='/api/rutasbuses', method= 'post')
+    label(for="numero") numero
+    input#numero(name="numero" ,type="text")
+    label(for="ponen")
+    input#ponen(name="ponen", type = "text")
+    label(for="ponen")
+    input#precio(name="precio" ,type="text")
+    input#enviar(type="submit", value="enviar")
+
