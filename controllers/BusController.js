@@ -13,7 +13,7 @@ BusController.create = function (req, res) {
 
     nuevo.save(function (err) {
         if (err) {
-            res.json({ ok: false });
+            res.json({ ok: false,err });
         } else {
             res.json({ ok: true });
         }
